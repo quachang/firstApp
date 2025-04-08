@@ -21,13 +21,13 @@ class _SplashScreenState extends State<SplashScreen> {
       if (user == null) {
         nextPageOnly(context, const AuthPage());
       } else {
-        DynamicLinkProvider().initDynamicLink().then((value) {
+        /*DynamicLinkProvider().initDynamicLink().then((value) {
           if (value == "") {
             nextPageOnly(context, const MainActivityPage());
           } else {
             nextPage(context, IndividualPollsPage(id: value));
           }
-        });
+        });*/
       }
     });
   }

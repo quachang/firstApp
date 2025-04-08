@@ -1,10 +1,10 @@
 import 'dart:developer';
 
-import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
+//import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
 
 class DynamicLinkProvider {
   Future<String> createLink(String id) async {
-    log(id);
+    /*log(id);
     final String url = "https://com.example.my_polls?id=$id";
 
     final DynamicLinkParameters parameters = DynamicLinkParameters(
@@ -19,11 +19,12 @@ class DynamicLinkProvider {
 
     final pollLink = await link.buildShortLink(parameters);
 
-    return pollLink.shortUrl.toString();
+    return pollLink.shortUrl.toString();*/
+    return "";
   }
 
   Future<String> initDynamicLink() async {
-    final instancLink = await FirebaseDynamicLinks.instance.getInitialLink();
+    /*final instancLink = await FirebaseDynamicLinks.instance.getInitialLink();
 
     String? link = '';
 
@@ -32,9 +33,10 @@ class DynamicLinkProvider {
 
       final param = pollLink.queryParameters;
 
-      link = param["id"];
+      link = param["id"];*/
+    return "";
     }
 
-    return link!;
+    //return link!;
   }
-}
+

@@ -88,11 +88,14 @@ class _HomePageState extends State<HomePage> {
                                           trailing: IconButton(
                                               onPressed: () {
                                                 ///
-                                                DynamicLinkProvider()
+                                                /*DynamicLinkProvider()
                                                     .createLink(data.id)
                                                     .then((value) {
                                                   Share.share(value);
-                                                });
+                                                });*/
+                                                ScaffoldMessenger.of(context).showSnackBar(
+                                                    SnackBar(content: Text("Sharing is temporarily disabled"))
+                                                );
                                               },
                                               icon: const Icon(Icons.share)),
                                         ),
